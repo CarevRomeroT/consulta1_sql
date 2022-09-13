@@ -51,3 +51,10 @@ O se puede utilizar el operador OR
 
 ![Consulta7](img/imagen7.png "consulta 7")
 
+8. Si se desea obtener los registros donde la cuarta letra del nombre sea una 'a'
+
+`SELECT * FROM usuario WHERE 
+
+![Consulta8](img/imagen8.png "consulta 8")
+
+nombre LIKE '___a%`
