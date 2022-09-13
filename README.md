@@ -31,5 +31,11 @@ O se puede utilizar el operador OR
 
 ![Consulta4](img/imagen4.2.png "consulta 4 pero con OR")
 
+5. Si se desea obtener los registros cuya identificacion sea menor de '150'  y la ciudad sea 'Cali', se debe utilizar el opredaor AND.
+
+`SELECT * FROM usuario WHERE Identificación<'150' AND ciudad_nac='Cali'`
+
+![Consulta4](img/imagen5.png "consulta 5")
+
 
 
