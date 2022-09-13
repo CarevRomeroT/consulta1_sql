@@ -35,7 +35,19 @@ O se puede utilizar el operador OR
 
 `SELECT * FROM usuario WHERE Identificación<'150' AND ciudad_nac='Cali'`
 
-![Consulta4](img/imagen5.png "consulta 5")
+![Consulta5](img/imagen5.png "consulta 5")
 
 
+6. Si se desea obtener los regitros cuyos nombres empiecen por la letra 'A', se debe utilizar el operador LIKE que utiliza los patrones '%' (Todos) y '_' (caracter)
+
+`SELECT * FROM usuario WHERE nombre LIKE 'A%'`
+
+![Consulta6](img/imagen6.png "consulta 6")
+
+
+7. Si se desea obtener los registros cuyo nombre contenga la letra 'a'.
+
+`SELECT * FROM usuario WHERE nombre LIKE 'a%'`
+
+![Consulta7](img/imagen7.png "consulta 7")
 
