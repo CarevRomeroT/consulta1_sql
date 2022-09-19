@@ -64,3 +64,40 @@ nombre LIKE '___a%`
 `SELECT * FROM usuario WHERE Identificación BETWEEN '110' AND '150'`
 
 ![Consulta9](img/imagen9.png "consulta 9")
+
+
+## COMANDO DELETE
+
+10. Parra eliminar solamente los registros cuya identificación sea mayor de 130
+
+`DELETE FROM usuario WHERE Identificación>130 `
+
+
+![Consulta 10](img/img10.png "consulta 10")
+![Consulta 10](img/img10.2.png "consulta 10")
+
+
+11.Para actualizar la ciudad de nacimiento de Cristian Vanegas, cuya identificación es 114.
+
+`UPDATE usuario SET ciudad_nac = 'Manizales' WHERE Identificación='114'`
+
+![Consulta 11](img/img11.png "consulta 11")
+
+
+##INNER JOIN 
+Permite obtener datos de dos o mas tablas. Cuando se realiza la concatacion de las tablas, no necesariamente se debe mostrar todos los datos de las tablas 
+
+##Tabla pedidos
+
+![Tabla pedidos](img/imgtablapedidos.png "tabla pedidos")
+
+12. Para visualizar los camposidentificación, nombre, apellidos dela tabla ususario y numero pedido, fecha de compra, fecha de vencimiento y observacion de la tabla de pedidos. Se debe realizar la siguiente instruccions SQL:
+
+`SELECT usuario. identifiación, usuario.nombre, usuario.apellido, pedido.nropedido, pedido.fechacompra, pedido.fechavence, pedidos.observación, FROM usruario INNER JOIN pedidos ON usuario. Identificación = pedidos.Identificación`
+
+![Consulta 12](img/img12.png "consulta 12")
+
+13. Para visualizar todos los cmapos de las tablas usuarios y pedidos donde Identificacion sea mayor que 100, se debe realizar la siguiente instruccion
+
+`SELECT usuario.* , Pedidos.* FROM usuario INNER JOIN Pedidos ON usuario.Identificación= Pedidos.Identificacion WHERE usuario.Identificación>100;`
+![Consulta 13](img/img13.png "Consulta 13")
